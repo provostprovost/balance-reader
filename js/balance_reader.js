@@ -1,11 +1,14 @@
 (function() {
   $('#balanceForm').on('submit', function(e) {
     e.preventDefault();
+
     var balanceInput = $('#balanceText').val();
     var balanceText = balanceToText(balanceInput);
+
     window.player = new Audio();
 
     playSound(balanceText, 0);
+
     var counter = 1;
     $(window.player).on('ended', function() {
       if (counter < balanceText.length) {
@@ -52,7 +55,6 @@
 
     return ["yourbalanceis"].concat(billions, millions, thousands, hundreds,
                   dollarText, "and", cents, centText).filter(Boolean);
-
   }
 
   function twoDigits(num) {
