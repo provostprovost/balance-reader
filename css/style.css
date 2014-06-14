@@ -1,3 +1,13 @@
-body {
+.formDiv {
   text-align: center;
+  padding: 6em;
+}
+
+a {
+  color: #85c147;
+  text-decoration: none;
+}
+
+p {
+  padding: 1em;
 }

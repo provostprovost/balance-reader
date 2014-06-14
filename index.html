@@ -1,14 +1,19 @@
 <html>
 <head>
   <title>Balance Reader</title>
+  <link rel="stylesheet" href="css/pure-min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <p>Type in a dollar (cents optional) amount less than 1 trillion dollars and hear me say the amount.</p>
-  <form id="balanceForm">
-    Balance: <input type="text" id="balanceText">
-    <input type="submit" value="Submit">
-  </form>
+  <div class="formDiv">
+    <p>Type in a dollar (cents optional) amount less than 1 trillion dollars and hear me say the amount.</p>
+    <form class="pure-form" id="balanceForm">
+      <input type="text" placeholder="Balance:" id="balanceText">
+      <input class="pure-button pure-button-primary" type="submit" value="Submit">
+    </form>
+  </div>
+  <hr/>
+  <p><a href="../">< Back to home page</a></p>
   <script src="js/jquery-2.1.1.min.js"></script>
   <script src="js/balance_reader.js"></script>
   <script>
