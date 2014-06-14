@@ -2,7 +2,7 @@
   $('#balanceForm').on('submit', function(e) {
     e.preventDefault();
 
-    var balanceInput = $('#balanceText').val();
+    var balanceInput = $('#balanceText').val().replace(/[^\d.-]/g, '');
     var balanceText = balanceToText(balanceInput);
 
     window.player = new Audio();
